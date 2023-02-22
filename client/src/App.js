@@ -1,10 +1,12 @@
 
 import './App.css';
+import CousinInput from "./features/cousins/CousinInput";
 
 function App() {
   return (
     <div className="App">
-      Hello
+      Add New Cousin 
+      <CousinInput />
     </div>
   );
 }
