@@ -1,14 +1,14 @@
 const initialState = {
-    users: [],
+    cousins: [],
   };
   
   function cousinsReducer(state = initialState, action) {
     switch (action.type) {
       case "cousins/add":
-        console.log("adding ", action.payload);
+        console.log("adding", action.payload);
         return {
           ...state,
-          users: [...state.users, action.payload],
+          cousins: [...state.cousins, action.payload],
         };
   
       default:
